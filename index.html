@@ -11,21 +11,14 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + JohnDoe main styles -->
     <link rel="stylesheet" href="assets/css/johndoe.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <!-- <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram"
-                            aria-hidden="true"></i></a></li> -->
                  <li class="social-item"><a class="social-link text-light" href="mailto:dickyprabowo13@gmail.com"><i class="ti-email"
                             aria-hidden="true"></i></a></li>
                 <li class="social-item"><a class="social-link text-light" href="https://github.com/prabszx10"><i class="ti-github"
@@ -38,7 +31,6 @@
                 <h4 class="header-subtitle">Hello, I am</h4>
                 <h1 class="header-title">Dicky Prabowo</h1>
                 <h6 class="header-mono">Implementation Consultant | Web Developer</h6>
-                <!-- <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Download Resume</button> -->
             </div>
         </div>
     </header>
@@ -88,9 +80,7 @@
                 <h3 class="font-weight-light">Who am I ?</h3>
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">A Passionate Web Developer</h5>
-                <p class="mt-20">I've got more than 2 years of experience as a web developer I could handle both backend
-                    and frontend development, with specialization in PHP and JavaScript for development. I'm deeply
-                    passionate about web development and hopefully could be the part in more web-based app developments
+                <p class="mt-20">I’m a full-stack web developer with over 4 years of experience building responsive and efficient web applications. Skilled in Laravel, JavaScript, React, MySQL, ColdFusion, and Golang, I’ve handled both frontend and backend development across various projects, from landing pages to API-driven platforms. I write clean, maintainable code and enjoy learning new tools to deliver impactful digital solutions.
                 </p>
                 <!-- <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button> -->
             </div>
@@ -100,7 +90,7 @@
                 <ul class="mt40 info list-unstyled">
                     <!-- <li><span>Birthdate</span> : 09/13/1996</li> -->
                     <li><span>Email</span> : dickyprabowo13@gmail.com</li>
-                    <li><span>Phone</span> : +62 859-7472-6287</li>
+                    <li><span>Phone</span> : <a href="#" onclick="window.open('https://wa.me/6285974726287','_blank'); return false;">+62 859-7472-6287</a></li>
                     <!-- <li><span>Skype</span> : John_Doe </li> -->
                     <li><span>Address</span> : Jl. Gurita Raya No.A5, RW.2, PJMI Bintaro, Kec. Pd. Aren, Kota Tangerang
                         Selatan, Banten 15222.</li>
@@ -169,6 +159,138 @@
             </div>
         </div>
     </div>
+
+    <section class="section" id="portofolio">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Portofolio</h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/portofolio_dapen.png"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Sistem Dapen Terpadu Universitas Muhammadiyah Malang</h6>
+
+                        <p class="post-details font-weight-bold">
+                            Tech Stack: Laravel, Jquery, Bootstrap, MySQL
+                        </p>
+
+                        <p>
+                            In this project, I play the role of a Fullstack Developer from the Analyze phase until the
+                            User Acceptance phase. The system's main function is to count the retirement funds of
+                            employees at Muhammadiyah University Malang.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- end of blog wrapper -->
+
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/portofolio_kirimpaket.png"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Sistem Pengiriman Paket kirimpaket.id</h6>
+
+                        <p class="post-details font-weight-bold">
+                            Tech Stack: Laravel, Vue.js , Bootstrap, MySQL
+                        </p>
+
+                        <p>For this project, I play the role of a Fullstack Developer that implement design to Frontend
+                            using Vue.js and createng API Endpoint using Laravel. Kirimpaket.id is a system that can be
+                            used to check shipping costs, track the position of a package using its tracking number, and
+                            facilitate package delivery through various courier services. This system utilizes APIs from
+                            several package delivery couriers in Indonesia for its implementation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- end of blog wrapper -->
+
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/portofolio_dpmptsp.png"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Sistem Informasi &amp; Tanda Tangan Elektronik DPMPTSP Kota Batu</h6>
+
+                        <p class="post-details font-weight-bold">
+                            Tech Stack: Laravel, Bootstrap, MySQL
+                        </p>
+
+                        <p>In this project, I play the role of a Fullstack Developer from the Analyze phase until the
+                            User Acceptance phase. This project is a vocational training/internship project that I am
+                            currently continuing as the topic of my thesis. This information system contains general
+                            information about government affairs, investment opportunities, electronic signature
+                            issuance processes using APIs, application tracking using APIs, and other features. I
+                            developed this information system for 2 months under the supervision of the Batu City
+                            Communication and Information Office (Diskominfo Kota Batu).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog1.jpg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Research And Developement (Inafood &amp; ASW)</h6>
+
+                        <p class="post-details font-weight-bold">
+                            Tech Stack: Codeignitier, Bootstrap, MySQL, Jquery
+                        </p>
+
+                        <p>I handled this project while working at Sekawan Media. These applications were developed for Inafood and ASWfood as their research and development media for their products. I cannot provide further details about these applications due to a Non-Disclosure Agreement that prohibits me from sharing the flow and the data inside. I didn't develop these applications from scratch, but rather improved new features, menus, and supported users if any bugs were found.
+                        </p>
+                    </div>
+                </div>
+
+                
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog1.jpg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Regulatory Affairs (Inafood &amp; ASW)</h6>
+
+                        <p class="post-details font-weight-bold">
+                            Tech Stack: Codeignitier, Bootstrap, MySQL, Jquery
+                        </p>
+
+                        <p>The same with RND above, I handled this project while working at Sekawan Media. These applications were developed for Inafood and ASWfood as their regulatory application for their products. I cannot provide further details about these applications due to a Non-Disclosure Agreement that prohibits me from sharing the flow and the data inside. I didn't develop these applications from scratch, but rather improved new features, menus, and supported users if any bugs were found.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog1.jpg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Sistem Inventory</h6>
+
+                        <p class="post-details font-weight-bold">
+                            Tech Stack: Laravel, Bootstrap, MySQL
+                        </p>
+
+                        <p>This Is a self-project that i create for monitor and track the movement of goods within a
+                            business, from procurement to sale. They provide insights into stock levels, enabling
+                            businesses to make informed decisions about purchasing, production, and sales strategies.
+                            Additionally, inventory systems help prevent stockouts and overstocking by setting reorder
+                            points and facilitating timely replenishment of inventory.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <section class="section" id="education">
         <div class="container">
@@ -384,6 +506,9 @@
                                     <h6>PHP</h6>
                                 </li>
                                 <li>
+                                    <h6>Golang</h6>
+                                </li>
+                                <li>
                                     <h6>Coldfusion</h6>
                                 </li>
                                 <li>
@@ -427,168 +552,17 @@
         </div>
     </section>
 
-    <section class="section" id="portofolio">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Portofolio</h2>
-            <div class="row">
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/portofolio_dapen.png"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Sistem Dapen Terpadu Universitas Muhammadiyah Malang</h6>
-
-                        <p class="post-details font-weight-bold">
-                            Tech Stack: Laravel, Jquery, Bootstrap, MySQL
-                        </p>
-
-                        <p>
-                            In this project, I play the role of a Fullstack Developer from the Analyze phase until the
-                            User Acceptance phase. The system's main function is to count the retirement funds of
-                            employees at Muhammadiyah University Malang.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- end of blog wrapper -->
-
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/portofolio_kirimpaket.png"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Sistem Pengiriman Paket kirimpaket.id</h6>
-
-                        <p class="post-details font-weight-bold">
-                            Tech Stack: Laravel, Vue.js , Bootstrap, MySQL
-                        </p>
-
-                        <p>For this project, I play the role of a Fullstack Developer that implement design to Frontend
-                            using Vue.js and createng API Endpoint using Laravel. Kirimpaket.id is a system that can be
-                            used to check shipping costs, track the position of a package using its tracking number, and
-                            facilitate package delivery through various courier services. This system utilizes APIs from
-                            several package delivery couriers in Indonesia for its implementation.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- end of blog wrapper -->
-
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/portofolio_dpmptsp.png"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Sistem Informasi &amp; Tanda Tangan Elektronik DPMPTSP Kota Batu</h6>
-
-                        <p class="post-details font-weight-bold">
-                            Tech Stack: Laravel, Bootstrap, MySQL
-                        </p>
-
-                        <p>In this project, I play the role of a Fullstack Developer from the Analyze phase until the
-                            User Acceptance phase. This project is a vocational training/internship project that I am
-                            currently continuing as the topic of my thesis. This information system contains general
-                            information about government affairs, investment opportunities, electronic signature
-                            issuance processes using APIs, application tracking using APIs, and other features. I
-                            developed this information system for 2 months under the supervision of the Batu City
-                            Communication and Information Office (Diskominfo Kota Batu).
-                        </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog1.jpg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Research And Developement (Inafood &amp; ASW)</h6>
-
-                        <p class="post-details font-weight-bold">
-                            Tech Stack: Codeignitier, Bootstrap, MySQL, Jquery
-                        </p>
-
-                        <p>I handled this project while working at Sekawan Media. These applications were developed for Inafood and ASWfood as their research and development media for their products. I cannot provide further details about these applications due to a Non-Disclosure Agreement that prohibits me from sharing the flow and the data inside. I didn't develop these applications from scratch, but rather improved new features, menus, and supported users if any bugs were found.
-                        </p>
-                    </div>
-                </div>
-
-                
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog1.jpg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Regulatory Affairs (Inafood &amp; ASW)</h6>
-
-                        <p class="post-details font-weight-bold">
-                            Tech Stack: Codeignitier, Bootstrap, MySQL, Jquery
-                        </p>
-
-                        <p>The same with RND above, I handled this project while working at Sekawan Media. These applications were developed for Inafood and ASWfood as their regulatory application for their products. I cannot provide further details about these applications due to a Non-Disclosure Agreement that prohibits me from sharing the flow and the data inside. I didn't develop these applications from scratch, but rather improved new features, menus, and supported users if any bugs were found.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog1.jpg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Sistem Inventory</h6>
-
-                        <p class="post-details font-weight-bold">
-                            Tech Stack: Laravel, Bootstrap, MySQL
-                        </p>
-
-                        <p>This Is a self-project that i create for monitor and track the movement of goods within a
-                            business, from procurement to sale. They provide insights into stock levels, enabling
-                            businesses to make informed decisions about purchasing, production, and sales strategies.
-                            Additionally, inventory systems help prevent stockouts and overstocking by setting reorder
-                            points and facilitating timely replenishment of inventory.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
     <section class="section bg-dark py-5">
         <div class="container text-center">
             <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
-            <button class="btn bg-primary w-lg">Hire me</button>
+            <button class="btn bg-primary w-lg" onclick="window.open('https://wa.me/6285974726287', '_blank')">Hire me</button>
         </div>
     </section>
 
     <div class="section contact" id="contact">
-        <div id="map" class="map"></div>
+        <div id="map" class="map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; z-index: 0;"></div>
         <div class="container">
             <div class="row">
-                <!-- <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h4 class="contact-title">Send a message</h4>
-                        <form action="">
-                            <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Name *" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
-                            </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div> -->
                 <div class="col-lg-4">
                     <div class="contact-info-card">
                         <h4 class="contact-title">Get in touch</h4>
@@ -597,7 +571,7 @@
                                 <i class="ti-mobile icon-md"></i>
                             </div>
                             <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+62 859-7472-6287</span></h6>
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted"><a href="#" onclick="window.open('https://wa.me/6285974726287','_blank'); return false;">+62 859-7472-6287</a></span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -619,14 +593,6 @@
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
-                            <!-- <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-twitter"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-instagram"
-                                        aria-hidden="true"></i></a></li> -->
                             <li class="social-item"><a class="social-link text-dark" href="https://github.com/prabszx10"><i class="ti-github"
                                         aria-hidden="true"></i></a></li>
                                         <li class="social-item"><a class="social-link" href="mailto:dickyprabowo13@gmail.com"><i class="ti-email"
@@ -663,9 +629,23 @@
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
     <!-- Google mpas -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+    <!-- <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script> -->
 
+        <script>
+            var map = L.map('map', { zoomControl: false, attributionControl: false }).setView([-6.2, 106.8], 13); // Jakarta
+          
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              maxZoom: 18
+            }).addTo(map);
+          
+            map.dragging.disable();
+            map.touchZoom.disable();
+            map.doubleClickZoom.disable();
+            map.scrollWheelZoom.disable();
+            map.boxZoom.disable();
+            map.keyboard.disable();
+          </script>
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
 
